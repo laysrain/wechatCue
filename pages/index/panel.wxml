@@ -1,0 +1,34 @@
+<view class="panel-con">
+  <view class="draw-con">
+    <view class="pad-con">
+      <view class="warn-con">
+        <text class="">*画出你的备忘录，灵感以及趣图等</text>
+        <view>*建议和问题邮件至Lays_rain@163.com</view>
+      </view>
+    </view>
+    <canvas class="panel-draw" canvas-id="seaya" disable-scroll="true" bindtouchstart="startDraw"
+     bindtouchmove="keepDraw" bindtouchend="stopDraw" binderror="showErr" />
+     <view class="icon-con">
+      <view class="draw-color">
+        <view class="pan-icon"><image src="../../imgs/pan-icon.png"></image></view>
+        <view class="color-tip color-01" style="box-shadow:{{style1}}" id="color1" data-color="#333333" bindtap="changePanColor"></view>
+        <view class="color-tip color-02" style="box-shadow:{{style2}}" id="color2" data-color="#66CC66" bindtap="changePanColor"></view>
+        <view class="color-tip color-03" style="box-shadow:{{style3}}" id="color3" data-color="#6699FF" bindtap="changePanColor"></view>
+        <view class="color-tip color-04" style="box-shadow:{{style4}}" id="color4" data-color="#FFFF66" bindtap="changePanColor"></view>
+        <view class="color-tip color-05" style="box-shadow:{{style5}}" id="color5" data-color="#FF6666" bindtap="changePanColor"></view>
+        <view class="color-tip color-06" style="box-shadow:{{style6}}" id="color6" data-color="#9999CC" bindtap="changePanColor"></view>
+        <view class="color-tip color-07" style="box-shadow:{{style7}}" id="color7" data-color="#FF99CC" bindtap="changePanColor"></view>
+      </view>
+      <view class="draw-color">
+        <view class="xp-icon" style="box-shadow:{{style8}}" bindtap="clearPannel"><image class="ric" src="../../imgs/xp-icon.png"></image></view>
+        <view class="empty-icon mar-l" bindtap="emptyPannel"><image src="../../imgs/empty-icon.png"></image></view>
+      </view>
+     </view>
+  </view>
+  <view class="btn-con">
+    <button type="primary" bindtap="saveToLocal">保存到相册</button>
+  </view>
+</view>
+<!--<view class="panel-tools">
+  <text class="lab-text"></text>
+</view>-->

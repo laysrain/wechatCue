@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/panel",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor":"#f8f8f8",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "指尖灵感",
+    "navigationBarTextStyle":"black"
+  }
+}
